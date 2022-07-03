@@ -1,28 +1,66 @@
-# co2dc492f8d6a0b45b7d47657
+# Dice Game
 
-Quick start:
+This is a Dice Game Project from [Scrimba's Frontend Developer Career Path](https://scrimba.com/learn/frontend).
 
-```
-$ yarn # npm install
-$ yarn build # npm run build
-````
+## Table of contents
 
-## Development
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+-   [Author](#author)
+-   [Acknowledgments](#acknowledgments)
 
-Run Webpack in watch-mode to continually compile the JavaScript as you work:
+## Overview
 
-```
-$ yarn watch # npm run watch
-```
+### The challenge
 
-## About Scrimba
+Users should be able to:
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+-   View the optimal layout for the site depending on their device's screen size
+-   See the game's rules at first instance and during the game without it affecting the player's progress
+-   See 2 players take turns in playing
+-   A round is finished after the 2 players have rolled the die
+-   Generate a random dice number between 1 and 6 with the roll die button
+-   The random number number is added to players' scores
+-   A double or nothing button is shown after the first round
+-   With the double or nothing button, players can take a risk to either double their score or leave it the same
+-   The winner is announced after a round is completed and when a player has a score of 20 and above
+-   Players can reset a game after a winner is announced
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+### Screenshot
 
-Happy Coding!
+![Game Rules](https://user-images.githubusercontent.com/65790714/177058231-a583bb9c-e14d-43ec-a44b-a2f7d911463f.png)
+![Main Game](https://user-images.githubusercontent.com/65790714/177058236-336cc0ca-b84c-41b6-9611-851346abb6e9.png)
+
+### Links
+
+-   Solution URL: [https://github.com/Mudi-Igbinoba/Dice-Game](https://github.com/Mudi-Igbinoba/Dice-Game)
+-   Live Site URL: [https://mudi-igbinoba.github.io/Dice-Game/](https://mudi-igbinoba.github.io/Dice-Game/)
+
+## My process
+
+### Built with
+
+-   Semantic HTML5 markup
+-   CSS custom properties
+-   JavaScript
+-   The DOM
+-   [Animista - An animation generator](https://animista.net/play)
+-   [Coolors - A palette generator](https://coolors.co/)
+
+### What I learned
+I learned how to use `void player2Dice.offsetWidth;`whic helped me reanimate my dice whenever the roll dice button was clicked
+
+## Author
+
+-   Twitter - [@Mudi_Igbinoba](https://www.twitter.com/mudi_igbinoba)
+-   Github - [@mudi-igbinoba](https://github.com/mudi-igbinoba)
+-   LinkedIn - [Osamudiame Igbinoba](https://www.linkedin.com/in/osamudiame-igbinoba/)
+
+## Acknowledgments
+
+A big shoutout goes out to my mentor [@msarit](https://github.com/msarit) for introducing me to this [Course](https://scrimba.com/learn/frontend) and [Frontend Learning Group for Women](https://flgw.org/).
