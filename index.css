@@ -1,0 +1,238 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px 0;
+    background: url(img/violet-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    position: relative;
+    font-family: 'Montserrat', cursive;
+    color: black;
+    height: max-content;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 50px;
+}
+
+#game {
+    position: relative;
+    display: none;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    margin: 0 auto;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#message {
+    color: #322669;
+    font-weight: 700;
+}
+
+button {
+    color: #fff;
+    padding: 22px 30px;
+    font-size: 16px;
+    margin: 0px auto;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+#rollBtn {
+    background-color: #322669;
+}
+
+#resetBtn {
+    background-color: #ff71ff;
+}
+
+#gambleBtn {
+    background-color: #e22946;
+    display: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+}
+
+#donMessage {
+    font-weight: 600;
+}
+
+#rules {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25px 50px;
+    z-index: 1000;
+}
+
+#rules li {
+    text-align: left;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+#rules h2 {
+    color: #fadcab;
+    font-weight: 900;
+}
+
+header {
+    display: flex;
+}
+
+#startGame {
+    margin: 0;
+    color: #fadcab;
+    background: #f6b25e;
+    line-height: 0.8;
+    margin-top: 8px;
+    padding: 20px;
+}
+
+#showRules {
+    font-family: 'Montserrat';
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: none;
+    background: #000;
+}
+
+.players h1 {
+    color: #fff;
+}
+
+.players span,
+#roundMsg {
+    color: #e22946;
+    font-weight: 800;
+}
+
+.rotate-scale-down {
+    animation: rotate-scale-down 0.5s linear both;
+}
+
+@keyframes rotate-scale-down {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+    50% {
+        -webkit-transform: scale(0.5) rotateZ(180deg);
+        transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+.slide-in-elliptic-left-fwd {
+    animation: slide-in-elliptic-left-fwd 0.7s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-elliptic-left-fwd {
+    0% {
+        -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
+        transform: translateX(-800px) rotateY(30deg) scale(0);
+        -webkit-transform-origin: -100% 50%;
+        transform-origin: -100% 50%;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(-50%) rotateY(0) scale(1);
+        transform: translateX(-50%) rotateY(0) scale(1);
+        -webkit-transform-origin: 1800px 50%;
+        transform-origin: 1800px 50%;
+        opacity: 1;
+    }
+}
+
+.slide-out-elliptic-left-fwd {
+    animation: slide-out-elliptic-left-fwd 0.5s
+        cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes slide-out-elliptic-left-fwd {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+.slide-in-elliptic-right-fwd {
+    animation: slide-in-elliptic-right-fwd 0.7s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-elliptic-right-fwd {
+    0% {
+        -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
+        transform: translateX(800px) rotateY(-30deg) scale(0);
+        -webkit-transform-origin: -100% 50%;
+        transform-origin: -100% 50%;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotateY(0) scale(1);
+        transform: translateX(0) rotateY(0) scale(1);
+        -webkit-transform-origin: -1800px 50%;
+        transform-origin: -1800px 50%;
+        opacity: 1;
+    }
+}

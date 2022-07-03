@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <button id="showRules">Show Rules 📜</button>
+        </header>
+        <div id="rules" class="container slide-in-elliptic-left-fwd">
+            <h2>Game Rules 🎮</h2>
+            <ol>
+                <li>Player 1 get his turn before Player 2 🔁</li>
+                <li>After each person's turn, a round is completed 🤝</li>
+                <li>
+                    During a person's turn, either the roll die button or the
+                    double or nothing (DoN) button can be used 🔀
+                </li>
+                <li>
+                    The roll dice button adds a random number between 1 and 6 to
+                    your score 🎲
+                </li>
+                <li>The DoN button appears only after the 1st round 🎰</li>
+                <li>
+                    The DoN button either doubles your score or leaves it the
+                    same 😱
+                </li>
+                <li>
+                    The <strong>WINNER</strong> is the player with a score
+                    <strong>HIGHER THAN OR EQUAL TO 20</strong> after a round is
+                    completed 🏆
+                </li>
+            </ol>
+            <button id="startGame">START GAME</button>
+        </div>
+        <div id="game" class="container slide-in-elliptic-right-fwd">
+            <h1 id="roundMsg">Round 1</h1>
+            <h2 id="message">Player 1 Turn</h2>
+            <div class="players">
+                <div id="player1">
+                    <h1>
+                        Score:
+                        <span id="player1Scoreboard">0</span>
+                    </h1>
+                    <div id="player1Dice" class="dice active">-</div>
+                </div>
+                <div id="player2">
+                    <h1>
+                        Score:
+                        <span id="player2Scoreboard">0</span>
+                    </h1>
+                    <div id="player2Dice" class="dice">-</div>
+                </div>
+            </div>
+            <h2 id="donMessage"></h2>
+
+            <button id="rollBtn">Roll Dice 🎲</button>
+            <button id="gambleBtn">Double or nothing 🎰</button>
+            <button id="resetBtn">Reset Game 🔁</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
